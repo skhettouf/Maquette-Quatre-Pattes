@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="ecf-contact.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Contact-Quatre Pattes</title>
+</head>
+<body>
+
+        <header class="header">
+            <div class="logo"><img src="images/icon-patte-blanche.png" alt="icon patte de chien blanche"> Quatre Pattes</div>
+            <nav>
+                <a href="ecf.html">Accueil</a>
+                <a href="ecf-contact.html">Contact</a>
+                <a href="#" class="don-btn"><img src="images/heart.png" alt="icon coeur blanc " class="coeur"> Faire un don</a>
+            </nav>
+        </header>
+    
+        <section class="contactez-nous">
+            <h2>Contactez-nous</h2>
+            <div class="contact-card">
+                <form id="contact-form">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required>
+    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="sujet">Sujet</label>
+                    <select id="sujet" name="sujet">
+                        <option value="don">Question sur les dons</option>
+                        <option value="benevole">Devenir bénévole</option>
+                        <option value="general">Questions générales</option>
+                    </select>
+    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+    
+                    <button type="envoyer" class="btn-envoyer">
+                         Envoyer
+                    </button>
+    
+                    <p id="confirmation-message" class="confirm"> Votre message a été envoyé avec succès !</p>
+                </form>
+            </div>
+        </section>
+    
+        
+</body>
+<footer class="footer">
+    <div class="footer-contenu">
+        <div>
+            <h4>Quatre Pattes</h4>
+            <p>Ensemble, protégeons les animaux et donnons-leur <br> une vie meilleure.</p>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <p><img src="images/mail.png" alt="icon enveloppe blanche"> contact@quatrepattes.org</p>
+        </div>
+        <div>
+            <h4>Suivez-nous</h4>
+        </div>
+    </div>
+</footer>
+</html>

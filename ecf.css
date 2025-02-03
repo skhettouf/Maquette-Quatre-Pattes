@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f8F9FA;
+}
+
+/* Barre de navigation */
+.header {
+    background-color: #126b43;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.header .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.header .don-btn {
+    background: red;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+/*ajustement icon coeur*/
+.coeur{  vertical-align: bottom}
+
+/*reponsive de la navbar*/
+
+/* Section haut de page */
+.entete {
+    position: relative;
+    width: 100%;
+    height: 70vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+/* Image de fond */
+.entete-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Filtre sombre */
+.filtre {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Opacité du filtre */
+    z-index: 2;
+}
+
+/* texte de l'entete */
+.texte-image {
+    position: relative;
+    z-index: 3;
+    max-width: 80%;
+}
+
+.texte-image h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.texte-image p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+/*partie don*/
+.donation {
+    background: white;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 600px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Options de don */
+.donation-option {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+/*boite d'option*/
+.don-boite {
+    width: 30%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.don-boite strong {
+    font-size: 20px;
+}
+
+.don-boite p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+/* Boutons de fréquence */
+.frequence-don{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.frequence-btn {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.frequence-btn.active {
+    background-color: #28a745;
+    color: white;
+    border-color: #28a745;
+}
+
+/* Bouton de validation */
+.don-btn2 {
+    background-color: #d62f2f;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+ .body2{
+    background-color: #e3f7e6; /* pour le fond vert clair */
+    
+}
+
+.mission-boite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.mission-diff {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 900px;
+}
+
+/* Image */
+.mission-image {
+    width: 50%;
+}
+
+.mission-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contenu texte */
+.mission-contenu {
+    width: 50%;
+    padding: 30px;
+    text-align: left;
+}
+
+.mission-contenu h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.mission-contenu p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+/* SECTION PRINCIPALE */
+.success-storie {
+    text-align: center;
+    padding: 40px;
+}
+
+/* TITRE */
+.success-storie h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* IMAGE PRINCIPALE AVEC TEXTE */
+.story {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.story img {
+    width: 100%;
+    display: block;
+}
+
+/* SUPERPOSITION DE TEXTE */
+.txt-superposé {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.txt-superposé h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.txt-superposé p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.txt-superposé span {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* MINIATURES storys */
+.Histoires {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.Histoires {
+    width: 120px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, border 0.3s;
+    border: 2px solid transparent;
+}
+
+.Histoires img {
+    width: 100%;
+    display: block;
+}
+
+.Histoires p {
+    background: white;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.Histoires:hover, .Histoires.active {
+    transform: scale(1.05);
+    border: 2px solid #00a86b;
+    border-radius: 10px;
+}
+
+
+/* QUIZZ */
+.container {
+    width: 100%;
+    max-width: 800px; /* Pour limiter la largeur */
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* Section Quiz */
+.quiz-section {
+    background-color: white; 
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /*ombre */
+    margin-bottom: 30px;
+}
+
+/* Cartes de questions */
+.quiz-question {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Boutons Vrai / Faux */
+.quiz-question button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.quiz-question button.vrai {
+    background: #4caf50;
+    color: white;
+}
+
+.quiz-question button.faux {
+    background: #f44336;
+    color: white;
+}
+
+/* Section Impact */
+.impact-section {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.impact {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+/* Section témoignages */
+.témoignages {
+    padding: 50px 20px;
+}
+
+.témoignages h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+        text-align: center; /* Centre le texte */
+        width: 100%; /* Assure que le titre prend toute la largeur */
+    }
+
+
+/* Conteneur des témoignages */
+.témoignages-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Cartes individuelles */
+.témoignages-carte {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.témoignages-carte img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.témoignages-carte p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.témoignages-carte strong {
+    font-size: 14px;
+    color: #000;
+}
+/* FOOTER */
+.footer {
+    background: #1f2a38;
+    color: white;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.footer-contenu {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
